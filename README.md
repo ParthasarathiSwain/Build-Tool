@@ -4,7 +4,29 @@ Build tools help automate the **compilation, testing, packaging, and dependency 
 They make development faster, standardized, and more maintainable.  
 
 ---
+## 📌 What are Build Tools?
+Build tools are used to **automate the application build process**.  
+They handle:
+- ✅ Compile the source code  
+- ✅ Download required dependencies (Ex: Spring Boot, Hibernate, JUnit, Log4j, Kafka...)  
+- ✅ Execute Unit Test Cases (JUnit)  
+- ✅ Package applications as **JAR** or **WAR**  
 
+| Format | Full Form | Usage |
+|--------|-----------|-------|
+| **JAR** | Java Archive | Packaging for Java Standalone Applications |
+| **WAR** | Web Archive  | Packaging for Java Web Applications |
+
+👉 Instead of performing these steps manually, build tools **automate** the process.
+
+---
+
+## 🛠️ Popular Java Build Tools
+1. 🟠 **Ant** (Outdated)  
+2. 🔵 **Maven** (Widely used)  [➡️ Learn More](Maven/Maven_Guide_README.md)
+3. 🟢 **Gradle** (Modern, flexible)[➡️ Learn More](Gradle/Gradle_Guide_README.md)
+
+---
 ## 📦 Apache Maven [➡️ Learn More](Maven/Maven_Guide_README.md)  
 
 Maven is one of the most widely used build tools in the Java ecosystem. It is especially popular for **Spring Boot and Microservices projects**.  
