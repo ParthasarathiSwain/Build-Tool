@@ -80,7 +80,7 @@ They handle:
 
 ## 📂 Creating Maven Standalone App
 ```bash
-mvn archetype:generate   -DgroupId=in.ashokit   -DartifactId=01-Maven-App   -DarchetypeArtifactId=maven-archetype-quickstart   -DinteractiveMode=false
+mvn archetype:generate   -DgroupId=in.codewithprth   -DartifactId=01-Maven-App   -DarchetypeArtifactId=maven-archetype-quickstart   -DinteractiveMode=false
 ```
 
 **📁 Folder Structure**
@@ -233,3 +233,99 @@ Remove unwanted child dependencies:
 
 ---
 💡 With Maven, **Project Setup → Build → Dependency Management → Packaging** becomes **fully automated**!
+
+---
+
+# 🎤 Maven Interview Questions & Answers
+
+## 1️⃣ What is Maven and why is it used?
+**Answer:**  
+Maven is a **build automation and dependency management tool** for Java projects.  
+It simplifies project setup, builds, testing, and deployment by managing dependencies and providing a structured lifecycle.
+
+---
+
+## 2️⃣ What is `pom.xml` in Maven?
+**Answer:**  
+- **POM (Project Object Model)** is the heart of any Maven project.  
+- It defines:  
+  - Project details (groupId, artifactId, version)  
+  - Dependencies  
+  - Plugins  
+  - Build configurations  
+
+---
+
+## 3️⃣ What are Maven Goals and Phases?
+**Answer:**  
+- **Goal** → A specific task (e.g., compile, test, package).  
+- **Phase** → A sequence of goals in Maven lifecycle.  
+- Example:  
+  - `clean` → Removes previous build files  
+  - `install` → Compiles, packages, and installs to local repo  
+
+---
+
+## 4️⃣ What is the difference between `compile`, `provided`, and `test` scope?
+**Answer:**  
+- **compile** → Available in all classpaths (default scope).  
+- **provided** → Available at compile time but provided by container (e.g., Servlet API).  
+- **test** → Only available in test classpath (JUnit, Mockito).  
+
+---
+
+## 5️⃣ What are Maven Repositories?
+**Answer:**  
+- **Local Repository** → Stored in user’s system (`.m2` folder).  
+- **Central Repository** → Maintained by Apache, default for Maven.  
+- **Remote Repository** → Maintained by organizations (e.g., Nexus, JFrog).  
+
+---
+
+## 6️⃣ What is the difference between Maven and Gradle?
+**Answer:**  
+| Feature        | Maven (XML) | Gradle (Groovy/Kotlin) |
+|----------------|-------------|-------------------------|
+| Configuration  | XML (pom.xml) | DSL scripts (build.gradle) |
+| Performance    | Slower        | Faster with caching    |
+| Flexibility    | Convention    | Highly customizable    |
+| Usage          | Java projects | Java + Android         |
+
+---
+
+## 7️⃣ How does Maven handle transitive dependencies?
+**Answer:**  
+- If **A depends on B** and **B depends on C**, Maven automatically downloads C.  
+- Developers don’t need to manage child dependencies manually.  
+
+---
+
+## 8️⃣ What is the difference between `snapshot` and `release` in Maven?
+**Answer:**  
+- **Snapshot** → Development version (`1.0-SNAPSHOT`) → Frequently updated.  
+- **Release** → Stable version (`1.0-RELEASE`) → Fixed and not modified.  
+
+---
+
+## 9️⃣ What is the role of Maven Plugins?
+**Answer:**  
+Plugins extend Maven functionality. Example:  
+- **Compiler Plugin** → Compiles Java code  
+- **Surefire Plugin** → Runs unit tests  
+- **Assembly Plugin** → Creates distributable formats (ZIP, TAR)  
+
+---
+
+## 🔟 How to skip test cases while building a Maven project?
+**Answer:**  
+Use:  
+```bash
+mvn install -DskipTests
+```
+👉 This compiles test classes but skips running them.
+
+---
+
+📌 **Pro Tip for Interviews:** Always highlight that Maven automates **dependency management + build lifecycle**, reducing manual efforts.
+
+
