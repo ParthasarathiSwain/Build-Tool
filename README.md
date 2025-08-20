@@ -5,11 +5,18 @@ They make development faster, standardized, and more maintainable.
 
 ---
 
-## 📦 Apache Maven  
+## 📦 Apache Maven [➡️ Learn More](Maven/Maven_Guide_README.md)  
 
-| Description | Action |
-|-------------|--------|
-| Maven is one of the most widely used build tools in the Java ecosystem. It is especially popular for **Spring Boot and Microservices projects**. <br><br> 🔑 **Key Features:** <br> - 📂 Uses **`pom.xml`** for configuration and dependency management. <br> - ⚡ Supports **lifecycle phases** (compile → test → package → deploy). <br> - 📦 Provides **centralized repository** for libraries. <br> - 🔄 Follows **Convention over Configuration** (less boilerplate). <br> - 🌍 Large community and industry-standard in Java projects. <br><br> 👉 Maven is best suited when you need a **standard, easy-to-use, and reliable build tool** for enterprise projects. | [![Learn More](https://img.shields.io/badge/Learn%20More-Maven_Guide-blue?style=for-the-badge)](Build-Tool/Maven/Maven_Guide_README.md) |
+Maven is one of the most widely used build tools in the Java ecosystem. It is especially popular for **Spring Boot and Microservices projects**.  
+
+### 🔑 Key Features  
+- 📂 Uses **`pom.xml`** for configuration and dependency management.  
+- ⚡ Supports **lifecycle phases** (compile → test → package → deploy).  
+- 📦 Provides **centralized repository** for libraries.  
+- 🔄 Follows **Convention over Configuration** (less boilerplate).  
+- 🌍 Large community and industry-standard in Java projects.  
+
+👉 Maven is best suited when you need a **standard, easy-to-use, and reliable build tool** for enterprise projects.  
 
 ---
 
@@ -17,7 +24,7 @@ They make development faster, standardized, and more maintainable.
 
 Gradle is a **modern, fast, and flexible** build tool that is widely used for **Java, Spring Boot, and Android projects**.  
 
-### 🔑 Key Features:  
+### 🔑 Key Features  
 - ⚡ **Performance Boost** with incremental builds and caching.  
 - ✍️ Uses **Groovy or Kotlin DSL** for configuration (more flexible than XML).  
 - 📦 Supports **multi-module projects** efficiently.  
